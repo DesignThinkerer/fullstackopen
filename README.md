@@ -1,2 +1,2 @@
 # fullstackopen
-exercises from the course fullstackopen.com
+submission repository  for the exercises from the course fullstackopen.com
