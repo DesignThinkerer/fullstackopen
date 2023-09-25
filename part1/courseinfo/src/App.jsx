@@ -1,10 +1,6 @@
-const Header = (props) => <h1>{props.course}</h1>;
+const Header = props => <h1>{props.course}</h1>;
 
-const Part = (props) => (
-  <p>
-    {props.name} {props.exercises}
-  </p>
-);
+const Part = props => <p> {props.name} {props.exercises} </p>;
 
 const Content = ({ parts }) => (
   <>
@@ -14,13 +10,7 @@ const Content = ({ parts }) => (
   </>
 );
 
-const Total = ({ parts }) => {
-  return (
-    <p>
-      Number of exercises = {parts.reduce((total, part) => total + part.exercises, 0)}
-    </p>
-  );
-};
+const Total = ({ parts }) => <p> Number of exercises = {parts.reduce((total, part) => total + part.exercises, 0)} </p>;
 
 const App = () => {
   const course = {
